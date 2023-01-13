@@ -17,7 +17,7 @@ class Solution {
 		for(int i=0; i<A.length; i++) {
     
 			//This condition is to make sure that we get the count from starting of the sequence
-			// If A[i]-1 exists, then the current A[i] is not the start element.
+			// If A[i]-1 exists, then the current A[i] is not the start element of the sequence
 			//In this way, its O(n) time complexity
       
 			if(!map.containsKey(A[i]-1)) {
