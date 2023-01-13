@@ -1,6 +1,9 @@
 // Question Link = https://workat.tech/problem-solving/practice/longest-subarray-zero-sum
 // Time - O(n), space - O(n)
 
+// if prefixSum[0 - 3] = 5, prefixSum[0 - 7] = 5
+// This indicates that sum from 4th index to 7th index is 0, so that prefixSum is same for prefixSum[0 - 3], prefixSum[0 - 7]
+
 class Solution {
 	int longestSubarrayWithZeroSum(int[] A) {
 		HashMap<Integer, Integer> prefixSumMap = new HashMap();
