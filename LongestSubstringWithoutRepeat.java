@@ -13,8 +13,7 @@ class Solution {
 		int maxLength = 0;
 		while(l <= r && r < s.length()) {
       // Check whether r'th char is in window
-      // Since we are checking from the start index, so if r'th char is present, then it'll be same as s'th char
-      // So we remove s'th char and increment only l
+      // Since we are checking from the s'th index, we'll be incrementing l and removing chars in window till set doesn't contain r'th char
 			if(set.contains(s.charAt(r))) {
 				set.remove(s.charAt(l));
 				l++;
